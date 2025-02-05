@@ -49,7 +49,10 @@ public class Sponge {
       {
         wordToUse += Character.toUpperCase(items);
       }
-      lower = !lower;
+      if(items != ' ')
+      {
+        lower = !lower;
+      }
     }
 
     return wordToUse;
